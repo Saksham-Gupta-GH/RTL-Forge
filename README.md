@@ -1,4 +1,4 @@
-# RTLForge 🔬
+# RTLForge
 
 **A production-quality, interactive Digital Logic Design, Simulation & Verification Lab — built as a portfolio project for a Semiconductor Engineering Intern role.**
 
@@ -9,17 +9,17 @@
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 **[https://rtl-forge-six.vercel.app/](https://rtl-forge-six.vercel.app/)**
 
-> Try it as a guest — no account required to explore the editor!
+> Try it as a guest — no account required to explore the editor.
 
 ---
 
-## 🧠 What is RTLForge?
+## What is RTLForge?
 
-RTLForge is a full-stack, browser-based **digital logic design and simulation environment** that mimics the kind of tooling used in professional hardware engineering workflows. It targets engineers and students who need to:
+RTLForge is a full-stack, browser-based digital logic design and simulation environment that mimics the kind of tooling used in professional hardware engineering workflows. It targets engineers and students who need to:
 
 - **Design** combinational and sequential digital circuits visually using a drag-and-drop canvas.
 - **Simulate** those circuits in real-time, with a clock engine that drives sequential state machines.
@@ -33,45 +33,45 @@ This project was built specifically to demonstrate proficiency in the skills rel
 | Digital Logic Design | Full schematic drag-and-drop editor |
 | RTL / Gate-level Simulation | Real-time combinational & sequential simulation engine |
 | Verification & Testbenches | Automated testbench runner with pass/fail reporting |
-| Waveform Analysis | Live SVG-based waveform viewer (like a lite Modelsim) |
+| Waveform Analysis | Live SVG-based waveform viewer (like a lite ModelSim) |
 | Computer Architecture | Support for DFFs, Registers, Counters — basic microarchitecture building blocks |
 | Engineering Automation | REST API backend for project persistence and sharing |
 
 ---
 
-## ✨ Features
+## Features
 
-### 🖊️ Circuit Editor
-- **Drag-and-drop canvas** powered by React Flow (`@xyflow/react`)
+### Circuit Editor
+- Drag-and-drop canvas powered by React Flow (`@xyflow/react`)
 - Component palette: `INPUT`, `OUTPUT`, `CLOCK`, `CONST_0/1`, `AND`, `OR`, `NOT`, `XOR`, `NAND`, `NOR`, `XNOR`, `BUFFER`, `DFF`, `REGISTER`, `COUNTER`
 - **Custom Components**: Define and package your own reusable logic blocks with named ports
 - Wire connections with smart edge routing
 
-### ⚡ Real-Time Simulation Engine
+### Real-Time Simulation Engine
 - Iterative, convergence-based combinational logic evaluator (handles feedback loops)
 - Sequential logic engine: D flip-flops update on rising clock edges
-- **Clock node** that auto-toggles on each simulation tick
+- Clock node that auto-toggles on each simulation tick
 - Adjustable simulation clock speed
 
-### 📊 Verification Tools
+### Verification Tools
 - **Truth Table Generator**: Exhaustively tests all input combinations and tabulates outputs
 - **Testbench Runner**: Define stimulus sequences (input vectors) and expected outputs with automatic pass/fail grading
 - **Waveform Viewer**: Live SVG timeline of all signal transitions — Inputs (blue), Outputs (green), Clocks (yellow)
 
-### 🔒 Authentication
+### Authentication
 - Individual user accounts stored in MongoDB (`username`, `email`, `password`)
 - Username uniqueness enforced at the database layer
-- **Guest sandbox mode**: Try the editor without an account — no save/share features enabled
+- **Guest sandbox mode**: Try the editor without an account — save/share features are disabled
 - Projects are scoped to the owning user's session
 
-### 💾 Cloud Persistence & Sharing
-- Full **CRUD API** for projects backed by MongoDB Atlas
+### Cloud Persistence & Sharing
+- Full CRUD API for projects backed by MongoDB Atlas
 - **Public share links**: Generate a read-only shareable URL for any project
 - Projects auto-load on return visits
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 | Technology | Role |
@@ -102,7 +102,7 @@ This project was built specifically to demonstrate proficiency in the skills rel
 
 ---
 
-## 🚀 Running Locally
+## Running Locally
 
 ### Prerequisites
 - Node.js 18+
@@ -142,7 +142,7 @@ APP_PASSWORD=your_password_here
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -170,12 +170,12 @@ src/
 
 ---
 
-## 🎨 Design Philosophy
+## Design
 
-The UI follows a **Cisco networking tool aesthetic** — a professional light theme using crisp whites, slate grays, and sky-blue accent colours. The goal was to look like a serious engineering tool rather than an educational demo.
+The UI follows a Cisco networking tool aesthetic — a professional light theme using crisp whites, slate grays, and sky-blue accent colours. The goal was to produce something that looks like a serious engineering tool rather than an educational demo.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Saksham Gupta** — [github.com/Saksham-Gupta-GH](https://github.com/Saksham-Gupta-GH)
